@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jill Van's Hobby Shop Prototype - Hobby Capital</title>
+<!-- Meta code  -->
+    <meta name="description" content="Jill Van's Hobby Shop Prototype - Hobby Capital" />
+    <meta name="keywords" content="UX Design, UX/UI, user experience, Hobby Shop Prototype" />
+    <meta http-equiv="author" content="Jill Van" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap responsive meta tag  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Linking files  -->
+    <!-- Bootstrap CSS file  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+
+<!-- Original linked file before homepage was renamed <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+<!--Codes to embed Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;500&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@400;500;600;700&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- v1 Sticky Header with topNav -->
+    <header class="header" id="myHeader">
+        <div class="logoBrand">
+            <!-- <a href="index.html"><img class="logo" src="./images..." alt="Hobby Shop logo"></a> -->
+            <h2 class="shopName">Hobby Capital</h2>
+        </div>
+        <div class="topNav">
+            <nav class="inline">
+                <ul>
+                    <a href="#shop"><li class="navLinks">Shop</li></a>
+                    <a href="#hobbies"><li class="navLinks" id="navConnect">Hobbies</li></a>
+                    <a href="#resources"><li class="navLinks">Resources</li></a>
+                    <a href="#contact"><li class="navLinks">Contact Us</li></a>
+                </ul>
+                <br>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+<div class="content">
+<!-- HERO section -->
+    <div class="jumbotron jumbotron-fluid heroSection">
+        <div class="container text-center">
+            <h1 class="text-center">Hobby Capital</h1>
+            <h3 class="text-center">Catchy brand motto goes here...</h3>
+        </div>
+    </div>
+
+<!-- ABOUT section -->
+    <section id="about">
+        <div class="jumbotron jumbotron-fluid aboutCopy">
+            <div class="container text-center">
+                <h2 class="text-center">About Hobby Shop</h2>
+                <p class="text-center">Description of the hobby shop brand and their rmission. Copy describing what they have to offer their customers.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non sapien eget quam congue ipsum dignissim at id. Mus nisl, condimentum laoreet bibendum.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- HOBBY CATEGORIES GRID section -->
+    <section id="hobbyCategories">
+        <h2 class="text-left">Hobby Categories</h2>
+        <!-- Built with Bootstrap 4 grid -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text gridCategoryTitle">3D Printing</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text gridCategoryTitle">Glasswork</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text gridCategoryTitle">Resin Work</h4>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text gridCategoryTitle">Sticker Making</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text gridCategoryTitle">Vinyl Decals</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text gridCategoryTitle">Wood Engraving</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- BACK TO TOP BUTTON -->
+<button onclick="topFunction()" id="bttBtn" title="Back to top">Top</button>
+
+
+<footer>
+    <div class="container">
+        <div class="row footerRow01">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <ul>
+                    <li>Shop</li>
+                    <a href="#hobbyCategories"><li>Hobbies</li></a>
+                    <li>Resources</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 contactInfo">
+                <h4>Hobby Capital</h4>
+                <p>7509 Lacinia. St.</p>
+                <p>Devonport, MN 91735</p>
+                <p>Support@HobbyCapital.com</p>
+                <p>(931) 562-3694</p>
+                <div>
+                    social icons go here
+                </div>
+            </div>
+        </div>
+        <div class="row copyrightRow">
+            <p id="footerText"> &copy Copyright 2022 - Designed by Jill Van</p>
+        </div>
+    </div>
+</footer>
+
+</div> <!-- Closes content for sticky header -->
+
+    
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Bootstrap JavaScript  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- My JavaScript  -->
+<script src="./js/hobbyCapital.js">
+</script>
+
+
+
+</body>
+</html>
