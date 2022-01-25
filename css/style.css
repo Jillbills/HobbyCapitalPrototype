@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    color: #125064; 
+    color: #0DA2D1; 
     font-family: 'Montserrat', sans-serif;
     font-size: 56px;
     font-weight: 600;
@@ -259,7 +259,10 @@ a {
 
 
 /* VINYL DECALS - GET STARTED - STEPS section */
-
+.stepsIconCards {
+    border: 2px solid red;
+    width: 360px;
+}
 
 
 /* VINYL DECALS - GET STARTED - RESOURCES section */
@@ -272,6 +275,15 @@ a {
     border-bottom: 1px solid black;
 }
 
+.resourceCard {
+    border-radius: 6px;
+    background-color: #125064;
+}
+
+.resourceCard h3 {
+    color: #F1F0F4;
+    padding-bottom: 1rem;
+}
 
 
 /* FOOTER */
@@ -288,8 +300,9 @@ footer li {
     list-style-type: none;
 }
 
-.contactInfo {
-        border: 2px solid red;
+.socialIcons {
+    display: flex;
+    flex-direction: row;
 }
 
 .copyrightRow {
