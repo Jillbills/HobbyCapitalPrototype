@@ -175,12 +175,15 @@ button:hover {
 
 .header h2 {
     color: #F1F0F4;
+    font-family: 'Comforter', cursive;
     padding-left: 5%;
-    /* Need to align title spaced from bottom of div and be 1 line */
-    border: 2px solid yellow;
     align-self: flex-end;
     width: 440px;
     height: 64px;
+    text-decoration-style: none;
+}
+
+.heroTitle: hover {
     text-decoration-style: none;
 }
 
@@ -240,13 +243,45 @@ a {
   }
 
 
-.aboutCopy, .heroSection {
-   margin-bottom: 0px;
+
+
+
+/* HERO section */
+.heroSection {
+    z-index: 3;
+    background-image: url("../images/glassBlowing80opa.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.decalAppHero {
+    border: 2px solid chartreuse;
+    z-index: 3;
+    background-image: url("../images/..."); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.aboutCopy, .heroSection, .decalAppHero {
+    margin-bottom: 0px;
+}
+ 
+.heroSection {
+    margin-bottom: 0px;
+}
+
+.heroTitle {
+    font-family: 'Comforter', cursive;
+    padding-bottom: 0rem;
+    /* Not sure if this property is working yet? */
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 
-  /* HOBBY CATEGORIES GRID SECTION */
+/* HOBBY CATEGORIES GRID SECTION */
 #hobbyCategories {
       background-color: #125064;
       padding-bottom: 8rem;
@@ -261,6 +296,16 @@ a {
 /* .gridCategoryTitle {
     
 } */
+
+.hobbyRow01 {
+    padding-bottom: 4rem;
+}
+
+.cardShadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 
 /* VINYL DECALS - GET STARTED - STEPS section */
