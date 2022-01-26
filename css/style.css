@@ -181,6 +181,7 @@ button:hover {
     align-self: flex-end;
     width: 440px;
     height: 64px;
+    text-decoration-style: none;
 }
 
 .header {
@@ -333,8 +334,16 @@ a {
 }
 
 footer li {
-    color: #125064;
     list-style-type: none;
+    color: #125064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+footer h4 {
+    padding-bottom: 1rem;
 }
 
 .socialIcons {
