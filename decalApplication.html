@@ -22,6 +22,8 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/f1cde76b8a.js" crossorigin="anonymous"></script>
 
 
     <title>Jill Van's Hobby Shop Prototype - Vinyl Decals - Get Started</title>
@@ -54,21 +56,31 @@
     <!-- v1 Sticky Header with topNav -->
     <header class="header" id="myHeader">
         <div class="logoBrand">
-            <!-- <a href="index.html"><img class="logo" src="./images..." alt="Hobby Shop logo"></a> -->
             <a href="./index.html"><h2 class="shopName">Hobby Capital</h2></a>
         </div>
         <div class="topNav">
             <nav class="inline">
                 <ul>
                     <a href="#shop"><li class="navLinks">Shop</li></a>
-                    <a href="#hobbies"><li class="navLinks" id="navConnect">Hobbies</li></a>
+                    <div class="dropdown navLinks">
+                        <a class="btn btn-secondary dropdown-toggle bg-transparent border-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                            Hobbies
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item">3D Printing</a>
+                                <a class="dropdown-item">Glass Making</a>
+                                <a class="dropdown-item">Resin Work</a>
+                                <a class="dropdown-item">Sticker Making</a>
+                                <a class="dropdown-item hobbyVDlink" href="decalsGetStarted.html">Vinyl Decals</a>
+                                <a class="dropdown-item">Wood Engraving</a>
+                            </div>
+                    </div>
                     <a href="#resources"><li class="navLinks">Resources</li></a>
-                    <a href="#contact"><li class="navLinks">Contact Us</li></a>
+                    <a href="#contact"><li class="navLinks">Contact</li></a>
                 </ul>
                 <br>
             </nav>
         </div>
-
     </header>
 
 
@@ -77,8 +89,8 @@
     <!-- HERO section -->
     <div class="jumbotron jumbotron-fluid decalAppHero">
         <div class="container text-center">
-            <h1 class="text-center">Vinyl Decals: Get Started</h1>
-            <h3 class="text-center">Decal Application</h3>
+            <h1 class="text-center heroTitleVD textShadow">Vinyl Decals: Get Started</h1>
+            <h3 class="text-center textShadow">Decal Application</h3>
         </div>
     </div>
 
@@ -118,9 +130,9 @@
     <section id="basicApplication">
         <h2 class="text-center">Basic Application Process</h2>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="card">
+            <div class="row appRow01">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <div class="card step1Card">
                         <!-- <img src="..." class="card-img-top" alt="...">  -->
                         <div class="card-body">
                             <h5 class="card-title">Step 1: Clean Surface</h5>
@@ -128,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-5 col-lg-5">
                     <div class="card">
                         <!-- <img src="..." class="card-img-top" alt="...">  -->
                         <div class="card-body">
@@ -138,9 +150,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="card">
+            <div class="row appRow02">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <div class="card step3Card">
                         <!-- <img src="..." class="card-img-top" alt="...">  -->
                         <div class="card-body">
                             <h5 class="card-title">Step 3: Position Decal</h5>
@@ -148,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-5 col-lg-5">
                     <div class="card">
                         <!-- <img src="..." class="card-img-top" alt="...">  -->
                         <div class="card-body">
@@ -158,9 +170,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="card">
+            <div class="row appRow03">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <div class="card step5Card">
                         <!-- <img src="..." class="card-img-top" alt="...">  -->
                         <div class="card-body">
                             <h5 class="card-title">Step 5: Adhere Decal</h5>
@@ -168,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-5 col-lg-5">
                     <div class="card">
                         <!-- <img src="..." class="card-img-top" alt="...">  -->
                         <div class="card-body">
@@ -189,7 +201,7 @@
         <h2 class="text-center">Pro Tips</h2>
         <h3 class="text-center">Advanced Application Strategies</h3>
         <div class="buttonContainer text-center">
-            <button type="button ">Learn More</button>
+            <button type="button">Learn More</button>
         </div>
     </section>
 
@@ -203,7 +215,7 @@
 <footer>
     <div class="container">
         <div class="row footerRow01">
-            <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="col-sm-12 col-md-3 col-lg-3 footerList">
                 <ul>
                     <li>Shop</li>
                     <a href="#hobbyCategories"><li>Hobbies</li></a>
@@ -216,8 +228,8 @@
                 <p>Devonport, MN 91735</p>
                 <p>Support@HobbyCapital.com</p>
                 <p>(931) 562-3694</p>
-                <div class="socialIcons">
-                    <div class="col">
+                <div class="socialIconsRow">
+                    <div class="col IGicon">
                         <img src="./images/icons/IG.png" alt="Instagram icon">
                     </div>
                     <div class="col">
