@@ -98,14 +98,6 @@ li {
 
 
 
-/* OVERALL STYLES */
-#setup, #theProcess {
-    padding-bottom: 8rem;
-    border: 2px solid red;
-}
-
-
-
 /* BUTTON/ASSETS STYLES */
 button {
     border: 3px solid #0DA2D1;
@@ -173,6 +165,11 @@ button:hover {
     max-height: 104px;
 }
 
+/* Want to get rid of Bootstrap blue underline on hover over logo text */
+.shopName:hover {
+    text-decoration-style: none;
+}
+
 .header h2 {
     color: #F1F0F4;
     font-family: 'Comforter', cursive;
@@ -183,7 +180,7 @@ button:hover {
     text-decoration-style: none;
 }
 
-.heroTitle: hover {
+.heroTitle {
     text-decoration-style: none;
 }
 
@@ -216,7 +213,7 @@ button:hover {
     display: inline;
     color: #F1F0F4;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.75rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;  
@@ -234,14 +231,22 @@ a {
     text-underline-position: under;
 }
 
+.hobbyVDlink:hover {
+    background-color: #bfd7f6;
+}
+
+
 /* Sticky Header */
 .sticky {
     position: fixed;
-    top: 0;
-    /* width: 98.5%; Was testing this over Zoom earlier but 100% seems to work better */ 
+    top: 0; 
     width: 100%;
-  }
+}
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
 
 
 
@@ -249,19 +254,26 @@ a {
 /* HERO section */
 .heroSection {
     z-index: 3;
-    background-image: url("../images/glassBlowing80opa.png"); 
+    background-image: url("../images/glass_floats02.jpeg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
 }
 
 .decalAppHero {
-    border: 2px solid chartreuse;
     z-index: 3;
-    background-image: url("../images/..."); 
+    background-image: url("../images/vinylPrinter01.jpeg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+}
+
+.decalAppHero h3 {
+    text-shadow: 1px 1px rgb(85, 142, 179);
+}
+
+.heroTitleVD h3 {
+    text-shadow: 1px 1px rgb(85, 142, 179);
 }
 
 .aboutCopy, .heroSection, .decalAppHero {
@@ -275,8 +287,21 @@ a {
 .heroTitle {
     font-family: 'Comforter', cursive;
     padding-bottom: 0rem;
+    color: #F1F0F4;
     /* Not sure if this property is working yet? */
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heroTitleVD {
+    padding-bottom: 0rem;
+}
+
+.heroSub {
+    color: #F1F0F4;
+}
+
+.textShadow {
+    text-shadow: 1px 1px rgb(33, 43, 52);
 }
 
 
@@ -293,10 +318,6 @@ a {
     padding-left: 2rem;
 }
 
-/* .gridCategoryTitle {
-    
-} */
-
 .hobbyRow01 {
     padding-bottom: 4rem;
 }
@@ -307,12 +328,29 @@ a {
 
 
 
-
 /* VINYL DECALS - GET STARTED - STEPS section */
+#getStarted h2 {
+    padding-top: 4rem;
+}
+
 .stepsIconCards {
-    border: 2px solid red;
     width: 360px;
 }
+
+.stepsRow01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.stepsRow02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
 
 
 /* VINYL DECALS - GET STARTED - RESOURCES section */
@@ -342,6 +380,10 @@ a {
     color: black;
 }
 
+#setup h2 {
+    padding-top: 4rem;
+}
+
 .setupRow02 {
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -352,14 +394,45 @@ a {
 /* BASIC APPLICATION section */
 #basicApplication {
     padding-bottom: 4rem;
+    background-color: #125064;;
+}
+
+#basicApplication h2 {
+    color: #F1F0F4;
+    padding-top: 4rem;
+}
+
+.appRow01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.appRow02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.appRow03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
 
 
 
  /* PRO TIPS section */
 #proTips h2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+}
+
+.protipCard button {
+    margin-top: 3.2rem;
 }
 
 .buttonContainer {
@@ -367,6 +440,7 @@ a {
     padding-bottom: 4rem;
     border-bottom: 1px solid black;
 }
+
 
 
 /* FOOTER */
@@ -387,14 +461,39 @@ footer li {
     line-height: 32px;
 }
 
+.footerHobbies {
+    list-style-type: none;
+    color: #125064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    padding-left: 0;
+}
+
+.footerHobbies:hover {
+    list-style-type: none;
+    color: #125064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-left: 0px;
+}
+
+
 footer h4 {
     font-family: 'Comforter', cursive;
     padding-bottom: 1rem;
 }
 
-.socialIcons {
+.socialIconsRow {
     display: flex;
     flex-direction: row;
+}
+
+.IGicon {
+    padding-left: 0px;
 }
 
 .copyrightRow {
@@ -411,4 +510,85 @@ footer h4 {
     font-weight: normal;
     line-height: 21px;
     text-align: center;
+}
+
+
+
+
+
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+@media only screen and (max-width: 600px) {
+    .logoBrand {
+        width: 50%;
+    }
+    
+    .shopName {
+        max-width: 350px;
+    }
+
+    .topNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inline {
+        padding-top: 25%;
+        padding-bottom: 0%;
+   
+    }
+
+    #myHeader ul {
+        padding-left: 0%;
+    }
+
+
+
+    /* HOMEPAGE */
+    .card01, .card02, .card03, .card04, .card05, .card06 {
+        margin-bottom: 2rem;
+    }
+
+    .hobbyRow01, .hobbyRow02 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+
+    /* VINYL DECALS */
+    .stepsRow01 {
+        padding-bottom: 0rem;
+    }
+
+    .stepsCard {
+        padding-bottom: 2rem;
+    }
+
+    .protipCard {
+        margin-bottom: 2rem;
+    }
+
+    .protipCard button {
+        margin-top: 0rem;
+    }
+
+
+    /* DECAL APPLICATION */
+    .step1Card, .step3Card, .step5Card {
+        margin-bottom: 2rem;
+    }
+
+
+
+    /* FOOTER */
+    .footerList {
+        padding-bottom: 2rem;
+    }
+
+    footer ul {
+        padding-left: 0px;
+    }
+
 }
